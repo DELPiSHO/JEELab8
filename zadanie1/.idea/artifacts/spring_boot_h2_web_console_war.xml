@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="spring-boot-h2-web-console:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>spring-boot-h2-web-console</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="spring-boot-h2-web-console-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="spring-boot-h2-web-console:war exploded" />
+    </root>
+  </artifact>
+</component>
