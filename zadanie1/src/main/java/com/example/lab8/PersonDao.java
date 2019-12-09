@@ -13,15 +13,6 @@ public class PersonDao {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    /*
-    public void save(Person person) {
-        String sql = "insert into Person (first_Name, Last_Name, Address) values (?, ?, ?)";
-        jdbcTemplate.update(sql, person.getFirstName(), person.getLastName(),
-                person.getAddress());
-    }
-
-     */
-
     public List<Person> loadAll() {
         return jdbcTemplate.query("select * from Person", (resultSet, i) -> {
             return toPerson(resultSet);
